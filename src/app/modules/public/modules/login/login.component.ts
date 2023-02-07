@@ -12,7 +12,7 @@ export class LoginComponent {
     this.isLoading = true;
     setTimeout(() => {
       this.isLoading = false;
-      this._router.navigate(['private']);
+      this._router.navigate(['home']);
 
     }, 1000);
   }
