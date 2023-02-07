@@ -1,7 +1,19 @@
-<div class="flex justify-content-center">
-  <div class="grid shadow-1">
-    <div class="col">
-      <h3 class="m-2 text-gray-800">¡Bievenido a Salta EMR!</h3>
+<div class="flex align-items-center justify-content-center mx-2 flex-wrap my-6">
+  <div class="shadow-3 w-full border-round grid ">
+    <div class="col-0 md:col background"></div>
+    <div class="col-12 md:col">
+      <div class="flex justify-content-center my-2">
+        <h1 class="m-2 text-gray-800">¡Bievenido a Salta EMR!</h1>
+      </div>
+      <div class="flex justify-content-center">
+        <p-button
+          label="Iniciar sesión con Google"
+          icon="pi pi-google"
+          [loading]="isLoading"
+          styleClass="p-button-raised p-button-secondary p-button-text"
+          (onClick)="load()"
+        ></p-button>
+      </div>
     </div>
   </div>
 </div>
