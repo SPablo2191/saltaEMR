@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {ButtonModule} from 'primeng/button';
-
+import {SidebarModule} from 'primeng/sidebar';
 
 @NgModule({
   declarations: [],
@@ -9,7 +9,8 @@ import {ButtonModule} from 'primeng/button';
     CommonModule
   ],
   exports : [
-    ButtonModule
+    ButtonModule,
+    SidebarModule
   ]
 })
 export class ImportsModule { }
