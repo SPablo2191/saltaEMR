@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'ui-navbar',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./ui-navbar.component.scss']
 })
 export class UiNavbarComponent {
-  protected isVisible : boolean = false;
+  @Output() showsideBar = new EventEmitter();
 }

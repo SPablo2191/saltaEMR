@@ -1,5 +1,5 @@
-<ui-navbar></ui-navbar>
+<ui-navbar (showsideBar)="isVisible = $event"></ui-navbar>
+<p-sidebar [(visible)]="isVisible" [baseZIndex]="10000" (onHide)="_hideSidebar()">
+  <h3>Bienvenido!</h3>
+</p-sidebar>
 <router-outlet></router-outlet>
-<!-- <p-sidebar [(visible)]="isVisible" [baseZIndex]="10000">
-  <h3>Left Sidebar</h3>
-</p-sidebar> -->

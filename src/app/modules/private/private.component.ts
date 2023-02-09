@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./private.component.scss']
 })
 export class PrivateComponent {
-  
+  protected isVisible : boolean = false;
+  _hideSidebar(){
+    this.isVisible = false;
+  }
 }
