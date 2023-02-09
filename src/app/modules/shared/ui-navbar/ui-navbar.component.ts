@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./ui-navbar.component.scss']
 })
 export class UiNavbarComponent {
-
+  protected isVisible : boolean = false;
 }
