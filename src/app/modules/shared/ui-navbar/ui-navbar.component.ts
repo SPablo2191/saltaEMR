@@ -6,5 +6,8 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./ui-navbar.component.scss']
 })
 export class UiNavbarComponent {
-  @Output() showsideBar = new EventEmitter();
+  protected isVisible : boolean = false;
+  _hideSidebar(){
+    this.isVisible = false;
+  }
 }
