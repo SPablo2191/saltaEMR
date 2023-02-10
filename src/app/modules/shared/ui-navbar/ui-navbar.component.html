@@ -1,14 +1,14 @@
 <nav class="shadow-2 my-1 border-round flex justify-content-center">
-  <button
-    pButton
-    pRipple
+  <p-button
     type="button"
-    label="Salta EMR"
-    icon="bi bi-prescription2"
     (click)="isVisible = true"
-    class="p-button-text p-button-plain p-button-lg"
-  ></button>
-  <!-- <p-button type="button" class="mr-2" (click)="isVisible = true" icon="pi pi-arrow-right"></p-button> -->
+    styleClass="text-gray-600 bg-white border-0"
+  >
+  <div class="text-center">
+    <i class="bi bi-prescription2 text-red-600 text-4xl"></i>
+    <h2 class="ml-2 inline">Salta EMR</h2>
+  </div>
+</p-button>
 </nav>
 <p-sidebar
   [(visible)]="isVisible"
