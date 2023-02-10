@@ -4,6 +4,7 @@ import { PrivateComponent } from './private.component';
 
 const routes: Routes = [
   { path: '', component: PrivateComponent },
+  { path: 'medicalrecord', loadChildren: () => import('./modules/medical-record/medical-record.module').then(m => m.MedicalRecordModule) },
 ];
 
 @NgModule({
