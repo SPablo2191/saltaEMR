@@ -5,9 +5,10 @@ import { Column } from '../models/column.interface';
   name: 'columnPipe',
 })
 export class ColumnPipePipe implements PipeTransform {
-  transform(items: any[]): Column[] {
+  transform(items: any[],headers : string[]): Column[] {
     let columns: Column[] = [];
     let keys = Object.keys(items[0]).filter((element) => element != 'id');
+    let index = 0;
     keys.forEach((key) => {
       let newColumn = {} as Column;
       let field = key;
@@ -25,8 +26,9 @@ export class ColumnPipePipe implements PipeTransform {
         newColumn.pipe = 'date'
       }
       newColumn.field = field;
-      newColumn.header = key;
+      newColumn.header = headers[index];
       columns.push(newColumn);
+      index++;
     });
     return columns;
   }

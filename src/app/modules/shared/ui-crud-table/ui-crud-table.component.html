@@ -1,14 +1,26 @@
-<p-table [columns]="cols" [value]="items" [tableStyle]="{'min-width': '50rem'}">
+<!-- <p-toolbar styleClass="mb-4 gap-2">
+  <ng-template pTemplate="left">
+      <button pButton pRipple label="New" icon="pi pi-plus" class="p-button-success mr-2" (click)="openNew()"></button>
+      <button pButton pRipple [label]="Delete" icon="pi pi-trash" class="p-button-danger" (click)="deleteSelectedProducts()" [disabled]="!selectedProducts || !selectedProducts.length"></button>
+  </ng-template>
+
+  <ng-template pTemplate="right">
+      <p-fileUpload mode="basic" accept="image/*" [maxFileSize]="1000000" label="Import" chooseLabel="Import" class="mr-2 inline-block"></p-fileUpload>
+      <button pButton pRipple label="Export" icon="pi pi-upload" class="p-button-help"></button>
+  </ng-template>
+</p-toolbar> -->
+<p-table [columns]="cols" [value]="items" responsiveLayout="stack" styleClass="w-full" >
   <ng-template pTemplate="header" let-columns>
       <tr>
-          <th *ngFor="let col of columns">
-              {{col.header}}
+          <th *ngFor="let col of columns" class="text-center">
+              <span >{{col.header}}</span>
           </th>
       </tr>
   </ng-template>
-  <ng-template pTemplate="body" let-rowData let-columns="columns">
+  <ng-template pTemplate="body" let-rowData let-columns="columns" >
       <tr>
-          <td *ngFor="let col of columns">
+          <td *ngFor="let col of columns" class="text-center">
+            <span class="p-column-title font-bold">{{ col.header }}</span>
             <span *ngIf="col.pipe == 'date'">
               {{
                 (col.subField)? rowData[col.field][col.subField] : rowData[col.field] | date

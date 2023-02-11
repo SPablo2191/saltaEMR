@@ -1,4 +1,4 @@
 <ui-crud-table
 [items]="(items$ | async)!"
-[cols]="(items$ | async)! | columnPipe"
+[cols]="(items$ | async)! | columnPipe : ['Apellido','Nombre','Fecha de Registro','DNI','Obra Social']"
 ></ui-crud-table>

@@ -11,7 +11,8 @@ import { TableModule} from 'primeng/table';
   exports : [
     ButtonModule,
     SidebarModule,
-    TableModule
+    TableModule,
+    // ToolbarModule
   ]
 })
 export class ImportsModule { }
