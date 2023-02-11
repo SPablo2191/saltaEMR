@@ -10,6 +10,5 @@ export class UiHomeButtonComponent implements OnInit {
   @Input() icon!: string;
   @Input() label!: string;
   ngOnInit(): void {
-    console.log(this.icon,this.label);
   }
 }
