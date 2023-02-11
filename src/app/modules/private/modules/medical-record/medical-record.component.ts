@@ -1,10 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-medical-record',
   templateUrl: './medical-record.component.html',
   styleUrls: ['./medical-record.component.scss']
 })
-export class MedicalRecordComponent {
+export class MedicalRecordComponent implements OnInit{
+  ngOnInit(): void {
+    console.log('cargo medical record');
+
+  }
 
 }
