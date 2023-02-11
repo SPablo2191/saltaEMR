@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class UiCrudTableComponent implements OnInit {
   ngOnInit(): void {
     console.table(this.cols);
-    console.table(this.items);
+    // console.table(this.items);
   }
   @Input() cols : any [] = [];
   @Input() items : any [] = [];

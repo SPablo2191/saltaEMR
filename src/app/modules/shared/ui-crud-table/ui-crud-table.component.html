@@ -9,7 +9,16 @@
   <ng-template pTemplate="body" let-rowData let-columns="columns">
       <tr>
           <td *ngFor="let col of columns">
-              {{rowData[col.field]}}
+            <span *ngIf="col.pipe == 'date'">
+              {{
+                (col.subField)? rowData[col.field][col.subField] : rowData[col.field] | date
+              }}
+            </span>
+            <span *ngIf="(col.pipe == '' || col.pipe == undefined)">
+              {{
+                (col.subField)? rowData[col.field][col.subField] : rowData[col.field]
+              }}
+            </span>
           </td>
       </tr>
   </ng-template>
