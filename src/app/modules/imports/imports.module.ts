@@ -4,7 +4,7 @@ import {ButtonModule} from 'primeng/button';
 import {SidebarModule} from 'primeng/sidebar';
 import { TableModule} from 'primeng/table';
 import {InputTextModule} from 'primeng/inputtext';
-
+import {TooltipModule} from 'primeng/tooltip';
 @NgModule({
   declarations: [],
   imports: [
@@ -14,7 +14,8 @@ import {InputTextModule} from 'primeng/inputtext';
     ButtonModule,
     SidebarModule,
     TableModule,
-    InputTextModule
+    InputTextModule,
+    TooltipModule
   ]
 })
 export class ImportsModule { }

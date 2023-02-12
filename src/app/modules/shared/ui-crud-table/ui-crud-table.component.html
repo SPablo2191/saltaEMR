@@ -17,15 +17,22 @@
             pButton
             pRipple
             label="Nuevo"
+            pTooltip="Nueva Consulta"
+            tooltipPosition="top"
             icon="pi pi-plus"
-            class="p-button-success mr-2"
+            class="p-button-success"
           ></button>
         </div>
       </div>
       <div class="col">
         <span class="p-input-icon-right flex justify-content-end">
           <i class="pi pi-search"></i>
-          <input type="text" pInputText />
+          <input
+            type="text"
+            class="w-full"
+            pInputText
+            placeholder="Buscar por nombre,DNI o apellido"
+          />
         </span>
       </div>
     </div>
