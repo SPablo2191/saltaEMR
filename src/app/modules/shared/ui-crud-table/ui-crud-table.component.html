@@ -1,14 +1,3 @@
-<!-- <p-toolbar styleClass="mb-4 gap-2">
-  <ng-template pTemplate="left">
-      <button pButton pRipple label="New" icon="pi pi-plus" class="p-button-success mr-2" (click)="openNew()"></button>
-      <button pButton pRipple [label]="Delete" icon="pi pi-trash" class="p-button-danger" (click)="deleteSelectedProducts()" [disabled]="!selectedProducts || !selectedProducts.length"></button>
-  </ng-template>
-
-  <ng-template pTemplate="right">
-      <p-fileUpload mode="basic" accept="image/*" [maxFileSize]="1000000" label="Import" chooseLabel="Import" class="mr-2 inline-block"></p-fileUpload>
-      <button pButton pRipple label="Export" icon="pi pi-upload" class="p-button-help"></button>
-  </ng-template>
-</p-toolbar> -->
 <p-table [columns]="cols" [value]="items" responsiveLayout="stack" styleClass="w-full" >
   <ng-template pTemplate="header" let-columns>
       <tr>
@@ -20,10 +9,10 @@
   <ng-template pTemplate="body" let-rowData let-columns="columns" >
       <tr>
           <td *ngFor="let col of columns" class="text-center">
-            <span class="p-column-title font-bold">{{ col.header }}</span>
+            <span class="p-column-title font-bold mr-4">{{ col.header }}</span>
             <span *ngIf="col.pipe == 'date'">
               {{
-                (col.subField)? rowData[col.field][col.subField] : rowData[col.field] | date
+                (col.subField)? rowData[col.field][col.subField] : rowData[col.field] | date : 'dd/MM/yyyy'
               }}
             </span>
             <span *ngIf="(col.pipe == '' || col.pipe == undefined)">
