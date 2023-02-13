@@ -5,6 +5,7 @@ import { UiNavbarComponent } from './ui-navbar/ui-navbar.component';
 import { RouterModule } from '@angular/router';
 import { UiHomeButtonComponent } from './ui-home-button/ui-home-button.component';
 import { UiCrudTableComponent } from './ui-crud-table/ui-crud-table.component';
+import { UiConfirmationDialogComponent } from './ui-confirmation-dialog/ui-confirmation-dialog.component';
 
 
 
@@ -12,7 +13,8 @@ import { UiCrudTableComponent } from './ui-crud-table/ui-crud-table.component';
   declarations: [
     UiNavbarComponent,
     UiHomeButtonComponent,
-    UiCrudTableComponent
+    UiCrudTableComponent,
+    UiConfirmationDialogComponent
   ],
   imports: [
     CommonModule,
