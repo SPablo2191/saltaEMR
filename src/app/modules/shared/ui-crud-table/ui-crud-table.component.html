@@ -21,6 +21,7 @@
             tooltipPosition="top"
             icon="pi pi-plus"
             class="p-button-success"
+            (click)="create()"
           ></button>
         </div>
       </div>
@@ -71,6 +72,7 @@
           pRipple
           tooltipPosition="top"
           pTooltip="Ver Detalle"
+          (click)="read(rowData.id)"
           icon="pi pi-search"
           class="p-button-rounded p-button-info mr-2"
         ></button>
@@ -79,14 +81,16 @@
           pRipple
           tooltipPosition="top"
           pTooltip="Editar"
+          (click)="update(rowData.id)"
           icon="pi pi-pencil"
           class="p-button-rounded p-button-success mr-2"
         ></button>
         <button
           pButton
           pRipple
-          pTooltip="Eliminar"
           tooltipPosition="top"
+          pTooltip="Eliminar"
+          (click)="delete(rowData.id)"
           icon="pi pi-trash"
           class="p-button-rounded p-button-warning mr-2"
         ></button>

@@ -5,6 +5,10 @@ import {SidebarModule} from 'primeng/sidebar';
 import { TableModule} from 'primeng/table';
 import {InputTextModule} from 'primeng/inputtext';
 import {TooltipModule} from 'primeng/tooltip';
+import { DialogService, DynamicDialogModule } from 'primeng/dynamicdialog';
+import { ConfirmationService, MessageService } from 'primeng/api';
+import {ConfirmDialogModule} from 'primeng/confirmdialog';
+
 @NgModule({
   declarations: [],
   imports: [
@@ -15,7 +19,14 @@ import {TooltipModule} from 'primeng/tooltip';
     SidebarModule,
     TableModule,
     InputTextModule,
-    TooltipModule
+    TooltipModule,
+    DynamicDialogModule,
+    ConfirmDialogModule
+  ],
+  providers: [
+    DialogService,
+    ConfirmationService,
+    MessageService
   ]
 })
 export class ImportsModule { }

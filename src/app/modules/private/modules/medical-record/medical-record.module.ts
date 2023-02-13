@@ -5,11 +5,15 @@ import { MedicalRecordRoutingModule } from './medical-record-routing.module';
 import { MedicalRecordComponent } from './medical-record.component';
 import { SharedModule } from 'src/app/modules/shared/shared.module';
 import { PipesModule } from 'src/app/pipes/pipes.module';
+import { EditDialogMedRecordComponent } from './components/edit-dialog-med-record/edit-dialog-med-record.component';
+import { ViewDialogMedRecordComponent } from './components/view-dialog-med-record/view-dialog-med-record.component';
 
 
 @NgModule({
   declarations: [
-    MedicalRecordComponent
+    MedicalRecordComponent,
+    EditDialogMedRecordComponent,
+    ViewDialogMedRecordComponent
   ],
   imports: [
     CommonModule,

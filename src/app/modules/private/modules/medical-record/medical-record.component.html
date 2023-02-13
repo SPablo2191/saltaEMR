@@ -1,5 +1,7 @@
 <h2 class="text-center text-gray-800">Pacientes</h2>
 <ui-crud-table
 [items]="(items$ | async)!"
+[updateComponent]="updateComponent"
+[viewComponent]="viewComponent"
 [cols]="(items$ | async)! | columnPipe : ['Apellido','Nombre','Fecha de Registro','DNI','Obra Social']"
 ></ui-crud-table>
