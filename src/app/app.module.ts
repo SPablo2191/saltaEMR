@@ -12,8 +12,8 @@ import { StoreModule } from '@ngrx/store';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NoopAnimationsModule, 
-    StoreModule.forRoot({}, {})
+    NoopAnimationsModule,
+    StoreModule.forRoot({}, {}),
   ],
   providers: [],
   bootstrap: [AppComponent]

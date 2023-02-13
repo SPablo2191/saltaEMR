@@ -5,7 +5,7 @@ export class crudTable {
   ref!: DynamicDialogRef;
   updateComponent!: any;
   viewComponent!: any;
-  title ! : string;
+  title! : string;
   constructor(
     protected dialogService: DialogService,
     private confirmationService: ConfirmationService
@@ -28,6 +28,7 @@ export class crudTable {
   }
   delete(id: number,itemName : string ='') {
     this.confirmationService.confirm({
+      header : `Eliminar ${this.title}`,
       message: `¿Estás seguro que deseas eliminar este ${this.title} ${itemName}?`,
       accept: () => {
       },

@@ -11,6 +11,7 @@ import { ViewDialogMedRecordComponent } from './components/view-dialog-med-recor
   styleUrls: ['./medical-record.component.scss']
 })
 export class MedicalRecordComponent implements OnInit{
+  title : string = 'Paciente';
   items$! : Observable<Patient[]>;
   updateComponent = EditDialogMedRecordComponent;
   viewComponent = ViewDialogMedRecordComponent;
