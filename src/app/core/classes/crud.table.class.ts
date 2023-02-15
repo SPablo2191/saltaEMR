@@ -25,7 +25,7 @@ export class crudTable {
     this.getDialog(this.createComponent, `Nuevo ${this.title}`);
   }
   read(data : any) {
-    this.getDialog(this.viewComponent, `Paciente - ${data.lastname}, ${data.name}`);
+    this.getDialog(this.viewComponent, `Paciente - ${data.lastname}, ${data.name}`,data);
   }
   update(item: any, title: string = 'Agregar Evolución') {
     this.getDialog(this.updateComponent, title, item);
