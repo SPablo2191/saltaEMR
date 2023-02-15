@@ -28,7 +28,8 @@ import { ReactiveFormsModule } from '@angular/forms';
   exports : [
     UiNavbarComponent,
     UiHomeButtonComponent,
-    UiCrudTableComponent
+    UiCrudTableComponent,
+    UiInputTextComponent
   ]
 })
 export class SharedModule { }

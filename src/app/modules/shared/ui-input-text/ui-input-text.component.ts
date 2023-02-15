@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 
 @Component({
-  selector: 'app-ui-input-text',
+  selector: 'ui-input-text',
   templateUrl: './ui-input-text.component.html',
   styleUrls: ['./ui-input-text.component.scss']
 })

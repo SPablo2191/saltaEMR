@@ -1,1 +1,15 @@
-<p>create-dialog-med-record works!</p>
+<form [formGroup]="this.formGroup">
+  <ui-input-text
+  label="Nombre"
+  [group]="this.formGroup"
+  name="name"
+  customClass="w-full"
+  ></ui-input-text>
+  <ui-input-text
+  label="Apellido"
+  [group]="this.formGroup"
+  name="lastname"
+  customClass="w-full"
+  ></ui-input-text>
+  
+</form>
