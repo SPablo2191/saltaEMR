@@ -72,7 +72,7 @@
           pButton
           pRipple
           tooltipPosition="top"
-          pTooltip="Ver Detalle"
+          [pTooltip]="detailTooltip"
           (click)="read(rowData.id)"
           icon="pi pi-search"
           class="p-button-rounded p-button-info mr-2"
@@ -81,7 +81,7 @@
           pButton
           pRipple
           tooltipPosition="top"
-          pTooltip="Editar"
+          [pTooltip]="editTooltip"
           (click)="update(rowData.id)"
           icon="pi pi-pencil"
           class="p-button-rounded p-button-success mr-2"
@@ -90,7 +90,7 @@
           pButton
           pRipple
           tooltipPosition="top"
-          pTooltip="Eliminar"
+          [pTooltip]="deleteTooltip"
           (click)="delete(rowData.id)"
           icon="pi pi-trash"
           class="p-button-rounded p-button-warning mr-2"

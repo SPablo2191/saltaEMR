@@ -12,6 +12,9 @@ export class UiCrudTableComponent extends crudTable {
   @Input() cols: any[] = [];
   @Input() items: any[] = [];
   @Input() override updateComponent: any;
+  @Input() detailTooltip : string = "Ver Detalle";
+  @Input() editTooltip : string = "Editar";
+  @Input() deleteTooltip : string = "Eliminar";
   @Input() override viewComponent: any;
   @Input() override createComponent: any;
   @Input() override title: string = '';

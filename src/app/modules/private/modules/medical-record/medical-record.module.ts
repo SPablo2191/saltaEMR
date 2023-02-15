@@ -9,6 +9,7 @@ import { EditDialogMedRecordComponent } from './components/edit-dialog-med-recor
 import { ViewDialogMedRecordComponent } from './components/view-dialog-med-record/view-dialog-med-record.component';
 import { CreateDialogMedRecordComponent } from './components/create-dialog-med-record/create-dialog-med-record.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ImportsModule } from 'src/app/modules/imports/imports.module';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     MedicalRecordRoutingModule,
     SharedModule,
     PipesModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ImportsModule
   ]
 })
 export class MedicalRecordModule { }

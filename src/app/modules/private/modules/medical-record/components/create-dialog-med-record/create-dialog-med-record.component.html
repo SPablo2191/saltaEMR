@@ -1,25 +1,35 @@
-<form [formGroup]="this.formGroup" class="mb-6">
+<form [formGroup]="this.formGroup" >
   <ui-input-text
-  label="Nombre"
-  [group]="this.formGroup"
-  name="name"
-  customClass="w-full"
+    label="Nombre"
+    [group]="this.formGroup"
+    name="name"
+    customClass="w-full"
   ></ui-input-text>
   <ui-input-text
-  label="Apellido"
-  [group]="this.formGroup"
-  name="lastname"
-  customClass="w-full"
+    label="Apellido"
+    [group]="this.formGroup"
+    name="lastname"
+    customClass="w-full"
   ></ui-input-text>
   <ui-calendar
-  [group]="this.formGroup"
-  name="registerDate"
-  label="Fecha de Registro"
-  [touchUI]="true"
+    [group]="this.formGroup"
+    name="registerDate"
+    label="Fecha de Registro"
+    [touchUI]="true"
   ></ui-calendar>
   <ui-dropdown
-  label="Obra Social"
-  [group]="this.formGroup"
-  name="registerDate"
+    label="Obra Social"
+    [group]="this.formGroup"
+    name="registerDate"
   ></ui-dropdown>
+  <div class="flex justify-content-center mt-4">
+    <button
+      pButton
+      pRipple
+      type="button"
+      label="Cancelar"
+      class="p-button-secondary mr-2"
+    ></button>
+    <button pButton pRipple type="button" label="Registrar" ></button>
+  </div>
 </form>

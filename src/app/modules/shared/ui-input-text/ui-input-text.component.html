@@ -15,7 +15,7 @@
     #crudInput
     [ngClass]="customClass"
   />
-  {{group.get(name)?.errors | json}}
+  <!-- {{group.get(name)?.errors | json}} -->
   <small
     class="p-invalid"
     *ngIf="group.get(name)?.dirty && group.get(name)?.errors"
