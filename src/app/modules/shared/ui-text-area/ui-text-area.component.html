@@ -1,14 +1,11 @@
-<div class="my-3" [formGroup]="group">
-  <label  class="text-muted">{{ title }}</label>
-  <span class="p-float-label">
-    <textarea
-      class="form-control"
-      [formControlName]="name"
-      id="float-input"
-      rows="5"
-      pInputTextarea
-      [autoResize]="true"
-    ></textarea>
-    <label for="float-input">{{ label }}</label>
-  </span>
+<div class="p-field my-3" [formGroup]="group">
+  <label  class="text-muted">{{ label }}</label>
+  <textarea
+    class="w-full"
+    [formControlName]="name"
+    id="float-input"
+    rows="5"
+    pInputTextarea
+    [autoResize]="true"
+  ></textarea>
 </div>
