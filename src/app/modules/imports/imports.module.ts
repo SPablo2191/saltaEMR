@@ -8,6 +8,7 @@ import {TooltipModule} from 'primeng/tooltip';
 import { DialogService, DynamicDialogModule } from 'primeng/dynamicdialog';
 import { ConfirmationService, MessageService } from 'primeng/api';
 import {ConfirmDialogModule} from 'primeng/confirmdialog';
+import {CalendarModule} from 'primeng/calendar';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import {ConfirmDialogModule} from 'primeng/confirmdialog';
     InputTextModule,
     TooltipModule,
     DynamicDialogModule,
-    ConfirmDialogModule
+    ConfirmDialogModule,
+    CalendarModule
   ],
   providers: [
     DialogService,

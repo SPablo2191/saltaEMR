@@ -9,16 +9,16 @@
     autofocus
     autocomplete="off"
     [ngClass]="{
-      'ng-invalid':
-        submitted && group.get(name)?.dirty && group.get(name)?.errors
+      'p-invalid':
+        group.get(name)?.dirty && group.get(name)?.errors
     }"
     #crudInput
     [ngClass]="customClass"
   />
-
+  {{group.get(name)?.errors | json}}
   <small
     class="p-invalid"
-    *ngIf="submitted && group.get(name)?.dirty && group.get(name)?.errors"
+    *ngIf="group.get(name)?.dirty && group.get(name)?.errors"
   >
     {{ group.get(name)?.errors }}
   </small>

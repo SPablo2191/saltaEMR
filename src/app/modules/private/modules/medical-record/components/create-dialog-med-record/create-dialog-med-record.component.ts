@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
+import { FormBuilder, Validators } from '@angular/forms';
 import { MessageService } from 'primeng/api';
 import { DynamicDialogRef } from 'primeng/dynamicdialog';
 import { abstractForm } from 'src/app/core/classes/abstract-form';
@@ -21,11 +21,12 @@ export class CreateDialogMedRecordComponent extends abstractForm implements OnIn
   ngOnInit(): void {
     this.createForm({
       id : [],
-      dni: [],
-      name: [],
-      lastname: [],
+      dni: [null,Validators.required],
+      name: [null,Validators.required],
+      lastname: [null,Validators.required],
       idSocialWork: [],
-      registerDate: [],
+      registerDate: [null,Validators.required],
     });
+    
   }
 }
