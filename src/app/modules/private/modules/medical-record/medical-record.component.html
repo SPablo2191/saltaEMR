@@ -3,6 +3,7 @@
 [items]="(items$ | async)!"
 [updateComponent]="updateComponent"
 [viewComponent]="viewComponent"
+[createComponent]="createComponent"
 [title]="title"
 [cols]="(items$ | async)! | columnPipe : ['Apellido','Nombre','Fecha de Registro','DNI','Obra Social']"
 ></ui-crud-table>

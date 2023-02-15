@@ -13,7 +13,8 @@ export class UiCrudTableComponent extends crudTable {
   @Input() items: any[] = [];
   @Input() override updateComponent: any;
   @Input() override viewComponent: any;
-  @Input() override title : string = '';
+  @Input() override createComponent: any;
+  @Input() override title: string = '';
   constructor(
     dialogService: DialogService,
     confirmationService: ConfirmationService

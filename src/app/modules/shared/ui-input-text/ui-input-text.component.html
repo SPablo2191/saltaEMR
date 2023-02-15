@@ -1,0 +1,25 @@
+<div class="p-field" [formGroup]="group">
+  <label [for]="name">{{ label }}</label>
+  <input
+    type="text"
+    [attr.readonly]="readonly ? '' : null"
+    pInputText
+    [id]="name"
+    [formControlName]="name"
+    autofocus
+    autocomplete="off"
+    [ngClass]="{
+      'ng-invalid':
+        submitted && group.get(name)?.dirty && group.get(name)?.errors
+    }"
+    #crudInput
+    [ngClass]="customClass"
+  />
+
+  <small
+    class="p-invalid"
+    *ngIf="submitted && group.get(name)?.dirty && group.get(name)?.errors"
+  >
+    {{ group.get(name)?.errors }}
+  </small>
+</div>

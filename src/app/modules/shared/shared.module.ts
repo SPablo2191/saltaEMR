@@ -6,6 +6,8 @@ import { RouterModule } from '@angular/router';
 import { UiHomeButtonComponent } from './ui-home-button/ui-home-button.component';
 import { UiCrudTableComponent } from './ui-crud-table/ui-crud-table.component';
 import { UiConfirmationDialogComponent } from './ui-confirmation-dialog/ui-confirmation-dialog.component';
+import { UiInputTextComponent } from './ui-input-text/ui-input-text.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -14,12 +16,14 @@ import { UiConfirmationDialogComponent } from './ui-confirmation-dialog/ui-confi
     UiNavbarComponent,
     UiHomeButtonComponent,
     UiCrudTableComponent,
-    UiConfirmationDialogComponent
+    UiConfirmationDialogComponent,
+    UiInputTextComponent
   ],
   imports: [
     CommonModule,
     ImportsModule,
-    RouterModule
+    RouterModule,
+    ReactiveFormsModule
   ],
   exports : [
     UiNavbarComponent,

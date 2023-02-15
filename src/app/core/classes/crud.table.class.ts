@@ -5,7 +5,8 @@ export class crudTable {
   ref!: DynamicDialogRef;
   updateComponent!: any;
   viewComponent!: any;
-  title! : string;
+  createComponent!: any;
+  title!: string;
   constructor(
     protected dialogService: DialogService,
     private confirmationService: ConfirmationService
@@ -19,20 +20,20 @@ export class crudTable {
       maximizable: true,
     });
   }
-  create(){}
-  read(id : number){
-    this.getDialog(this.viewComponent,`HOLA ${id}`);
+  create() {
+    this.getDialog(this.createComponent, `Nuevo ${this.title}`);
+  }
+  read(id: number) {
+    this.getDialog(this.viewComponent, `HOLA ${id}`);
   }
   update(item: any, title: string = 'Agregar Evolución') {
     this.getDialog(this.updateComponent, title, item);
   }
-  delete(id: number,itemName : string ='') {
+  delete(id: number, itemName: string = '') {
     this.confirmationService.confirm({
-      header : `Eliminar ${this.title}`,
+      header: `Eliminar ${this.title}`,
       message: `¿Estás seguro que deseas eliminar este ${this.title} ${itemName}?`,
-      accept: () => {
-      },
+      accept: () => {},
     });
   }
-
 }
