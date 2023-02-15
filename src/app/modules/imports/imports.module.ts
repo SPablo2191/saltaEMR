@@ -10,7 +10,7 @@ import { ConfirmationService, MessageService } from 'primeng/api';
 import {ConfirmDialogModule} from 'primeng/confirmdialog';
 import {CalendarModule} from 'primeng/calendar';
 import {DropdownModule} from 'primeng/dropdown';
-
+import {InputTextareaModule} from 'primeng/inputtextarea';
 
 @NgModule({
   declarations: [],
@@ -26,7 +26,8 @@ import {DropdownModule} from 'primeng/dropdown';
     DynamicDialogModule,
     ConfirmDialogModule,
     CalendarModule,
-    DropdownModule
+    DropdownModule,
+    InputTextareaModule
   ],
   providers: [
     DialogService,

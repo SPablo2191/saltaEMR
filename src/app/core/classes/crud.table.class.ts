@@ -1,5 +1,6 @@
 import { ConfirmationService } from 'primeng/api';
 import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog';
+import { BaseModel } from './baseModel.interface';
 
 export class crudTable {
   ref!: DynamicDialogRef;
@@ -23,8 +24,8 @@ export class crudTable {
   create() {
     this.getDialog(this.createComponent, `Nuevo ${this.title}`);
   }
-  read(id: number) {
-    this.getDialog(this.viewComponent, `HOLA ${id}`);
+  read(data : any) {
+    this.getDialog(this.viewComponent, `Paciente - ${data.lastname}, ${data.name}`);
   }
   update(item: any, title: string = 'Agregar Evolución') {
     this.getDialog(this.updateComponent, title, item);

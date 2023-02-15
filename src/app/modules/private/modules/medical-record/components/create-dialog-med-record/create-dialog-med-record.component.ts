@@ -26,7 +26,8 @@ export class CreateDialogMedRecordComponent extends abstractForm implements OnIn
       lastname: [null,Validators.required],
       idSocialWork: [],
       registerDate: [null,Validators.required],
+      observation : []
     });
-    
+
   }
 }

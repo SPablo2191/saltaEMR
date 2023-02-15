@@ -10,6 +10,7 @@ import { UiInputTextComponent } from './ui-input-text/ui-input-text.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { UiCalendarComponent } from './ui-calendar/ui-calendar.component';
 import { UiDropdownComponent } from './ui-dropdown/ui-dropdown.component';
+import { UiTextAreaComponent } from './ui-text-area/ui-text-area.component';
 
 
 
@@ -21,7 +22,8 @@ import { UiDropdownComponent } from './ui-dropdown/ui-dropdown.component';
     UiConfirmationDialogComponent,
     UiInputTextComponent,
     UiCalendarComponent,
-    UiDropdownComponent
+    UiDropdownComponent,
+    UiTextAreaComponent
   ],
   imports: [
     CommonModule,
@@ -35,7 +37,8 @@ import { UiDropdownComponent } from './ui-dropdown/ui-dropdown.component';
     UiCrudTableComponent,
     UiInputTextComponent,
     UiCalendarComponent,
-    UiDropdownComponent
+    UiDropdownComponent,
+    UiTextAreaComponent
   ]
 })
 export class SharedModule { }
