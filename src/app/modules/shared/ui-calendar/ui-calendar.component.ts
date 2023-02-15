@@ -2,7 +2,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 
 @Component({
-  selector: 'app-ui-calendar',
+  selector: 'ui-calendar',
   templateUrl: './ui-calendar.component.html',
   styleUrls: ['./ui-calendar.component.css']
 })
@@ -12,7 +12,7 @@ export class UiCalendarComponent implements OnInit {
   @Input() name! : string;
   @Input() label : string = '';
   @Input() time! : boolean;
-  @Input() touchUI! : boolean;
+  @Input() touchUI : boolean = false;
   @Input() date : Date = new Date();
   @Input() placeholder : string = '';
   @Output() value = new EventEmitter();
