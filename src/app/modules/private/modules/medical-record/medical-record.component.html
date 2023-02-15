@@ -5,5 +5,8 @@
 [viewComponent]="viewComponent"
 [createComponent]="createComponent"
 [title]="title"
+detailTooltip="Ver plantilla del paciente"
+editTooltip="Añadir nueva evolución"
+deleteTooltip="Eliminar paciente"
 [cols]="(items$ | async)! | columnPipe : ['Apellido','Nombre','Fecha de Registro','DNI','Obra Social']"
 ></ui-crud-table>

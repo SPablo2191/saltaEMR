@@ -1,4 +1,4 @@
-<form [formGroup]="this.formGroup" >
+<form [formGroup]="this.formGroup">
   <ui-input-text
     label="Nombre"
     [group]="this.formGroup"
@@ -28,8 +28,15 @@
       pRipple
       type="button"
       label="Cancelar"
+      (click)="cancel()"
       class="p-button-secondary mr-2"
     ></button>
-    <button pButton pRipple type="button" label="Registrar" ></button>
+    <button
+      pButton
+      pRipple
+      type="button"
+      label="Registrar"
+      (click)="submit()"
+    ></button>
   </div>
 </form>
