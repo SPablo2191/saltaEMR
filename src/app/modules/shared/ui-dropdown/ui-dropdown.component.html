@@ -1,0 +1,18 @@
+<div class="p-field my-2" [formGroup]="group">
+  <label for="dropdown" class="text-muted">{{ label }}</label>
+  <p-dropdown
+    id="dropdown"
+    [optionLabel]="optionLabel"
+    [optionValue]="optionValue"
+    [options]="options"
+    [formControlName]="name"
+    scrollHeight="100px"
+    (onChange)="onInput()"
+    [placeholder]="placeholder"
+    [showClear]="true"
+    styleClass="w-full"
+  ></p-dropdown>
+  <small *ngIf="valid" id="dropdown-help" class="p-error block">{{
+    errorMessage
+  }}</small>
+</div>

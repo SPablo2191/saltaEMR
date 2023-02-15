@@ -1,4 +1,4 @@
-<form [formGroup]="this.formGroup">
+<form [formGroup]="this.formGroup" class="mb-6">
   <ui-input-text
   label="Nombre"
   [group]="this.formGroup"
@@ -17,5 +17,9 @@
   label="Fecha de Registro"
   [touchUI]="true"
   ></ui-calendar>
-  
+  <ui-dropdown
+  label="Obra Social"
+  [group]="this.formGroup"
+  name="registerDate"
+  ></ui-dropdown>
 </form>

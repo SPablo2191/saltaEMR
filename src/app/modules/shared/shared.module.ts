@@ -9,6 +9,7 @@ import { UiConfirmationDialogComponent } from './ui-confirmation-dialog/ui-confi
 import { UiInputTextComponent } from './ui-input-text/ui-input-text.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { UiCalendarComponent } from './ui-calendar/ui-calendar.component';
+import { UiDropdownComponent } from './ui-dropdown/ui-dropdown.component';
 
 
 
@@ -19,7 +20,8 @@ import { UiCalendarComponent } from './ui-calendar/ui-calendar.component';
     UiCrudTableComponent,
     UiConfirmationDialogComponent,
     UiInputTextComponent,
-    UiCalendarComponent
+    UiCalendarComponent,
+    UiDropdownComponent
   ],
   imports: [
     CommonModule,
@@ -32,7 +34,8 @@ import { UiCalendarComponent } from './ui-calendar/ui-calendar.component';
     UiHomeButtonComponent,
     UiCrudTableComponent,
     UiInputTextComponent,
-    UiCalendarComponent
+    UiCalendarComponent,
+    UiDropdownComponent
   ]
 })
 export class SharedModule { }
