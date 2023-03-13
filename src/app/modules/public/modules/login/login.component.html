@@ -5,15 +5,17 @@
       <div class="flex justify-content-center my-2">
         <h1 class="m-2 text-gray-800">¡Bievenido a Salta EMR!</h1>
       </div>
-      <div class="flex justify-content-center">
-        <p-button
-          label="Iniciar sesión con Google"
-          icon="pi pi-google"
-          [loading]="isLoading"
-          styleClass="p-button-raised p-button-secondary p-button-text"
-          (onClick)="load()"
-        ></p-button>
-      </div>
+      <form >
+        <div class="flex justify-content-center">
+          <p-button
+            label="Iniciar sesión"
+            icon="pi pi-sign-in"
+            [loading]="isLoading"
+            styleClass="p-button-raised p-button-secondary p-button-text"
+            (onClick)="load()"
+          ></p-button>
+        </div>
+      </form>
     </div>
   </div>
 </div>
